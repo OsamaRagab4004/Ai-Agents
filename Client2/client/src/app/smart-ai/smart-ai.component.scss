@@ -1,0 +1,27 @@
+input[type="radio"] {
+    display: inline-block !important;
+    margin-right: 2px !important;
+}
+.displayFlex {
+    display: flex !important;
+    justify-content: space-between !important;
+
+}
+.templateContent {
+    width: 80% !important;
+}
+
+textarea {
+    display: block !important;
+    width: 100% !important;
+}
+
+.scrollDiv {
+    height: 500px !important;
+    overflow-y: scroll !important;
+    border: 1px solid #ccc !important;
+    padding: 5px !important;
+}
+.form-group {
+    width: 100% !important;
+}

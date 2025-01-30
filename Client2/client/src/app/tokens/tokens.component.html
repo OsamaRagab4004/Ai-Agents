@@ -1,0 +1,106 @@
+
+<div id="main_container" class="container-fluid dashboard-content">
+    <h1>Here are tokens for your article, please choose the tokens you need for the article or operate tokens:</h1>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <!--Card Body-->
+            <div class="card" *ngFor="let token of tokens.sections;let i = index">
+              
+                <div class="card-footer text-muted">
+                    <div class="container_of_header">
+                        <div class="title_of_token">{{token.title}}</div>
+                        <div class="container_of_buttons">
+                      </div>
+                   </div>
+                
+                <div class="card-body">
+                  <h5 class="card-title">{{token.title}}</h5>
+                  <p class="card-text">{{token.text}}</p>
+                  <p class="card-text">{{token.use_case}}</p>
+                  <p class="card-text">{{token.cta}}</p>
+                  
+                </div>  
+                  
+                <div id="accordion">
+                  <div class="card">
+                    <div class="card-header" id="heading{{i}}">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" [attr.data-target]="'#collapse' + i"  aria-expanded="false" [attr.aria-controls]="'collapse' + i">
+                          Edit the token
+                        </button>
+                      </h5>
+                    </div>
+                
+                    <div id="collapse{{i}}" class="collapse" [attr.aria-labelledby]="'heading' + i"  data-parent="#accordion">
+                      <div class="card-body">
+                              <div class="card-footer text-muted">
+                                <form id="form_{{i+10000}}">
+                                  
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect+{{i+2000}}">Change Tone</label>
+                                        <select class="form-control" id="exampleFormControlSelect+{{i+2000}}" [(ngModel)]="token.tone" [ngModelOptions]="{standalone: true}">
+                                        <option value="Formal">Formal</option>
+                                         <option value="Friendly">Friendly</option>
+                                         <option value="Casual">Casual</option>
+                                         <option value="Concerned">Concerned</option>
+                                         <option value="Optimistic">Optimistic</option>
+                                        </select>
+                                    </div>
+                                    
+            
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect+{{i+3000}}">Change Writing Style</label>
+                                        <select [(ngModel)]="token.writing_style" [ngModelOptions]="{standalone: true}" class="form-control" id="exampleFormControlSelect+{{i+3000}}" >
+                                          <option value="Conversational">Conversational</option>
+                                          <option value="Professional">Professional</option>
+                                          <option value="Technical">Technical</option>
+                                          <option value="Persuasive">Persuasive</option>
+                                          <option value="Professional and Persuasive">Professional and Persuasive</option>
+                                          <option value="Conversational and Persuasive">Conversational and Persuasive</option>
+                                        </select>
+                                    </div>
+            
+            
+                                    <div class="form-group">
+                                      <label for="exampleFormControlSelect+{{i+4000}}">Content Structure</label>
+                                      <select [(ngModel)]="token.content_structure" [ngModelOptions]="{standalone: true}" class="form-control" id="exampleFormControlSelect+{{i+4000}}" >
+                                        <option value="Bullet Points">Bullet Points</option>
+                                        <option value="FAQs">FAQs</option>
+                                        <option value="Article Text">Normal Text</option>
+                                      </select>
+                                    </div>
+            
+            
+                                    
+                                   
+                                
+            
+                            
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea+{{i+7000}}">Custom Prompt</label>
+                                        <textarea [(ngModel)]="token.userInput" [ngModelOptions]="{standalone: true}" class="form-control" id="exampleFormControlTextarea+{{i+7000}}" rows="3"></textarea>
+                                    </div>
+            
+            
+                                    <button  type="submit" class="btn btn-primary" (click)="showAlert($event,token,i)" >Submit</button>
+                                </form>
+                          </div>
+      
+      
+      
+                    </div>
+      
+      
+                  </div>
+              </div>
+      
+    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+    
+</div>
+</div>

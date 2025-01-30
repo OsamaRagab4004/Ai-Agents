@@ -1,0 +1,3 @@
+#fine-tuned model :: create data set and train model via the fine-tune UI
+# Flow : the data will be saved in the DB for fine-tuning , then the data will be created as jsonl file and uploaded to the fine-tune UI
+# the user can choose from answers / tokens what is high-quality and it will be used to train the model, the user then can choose which model will be used to generate content for example. each model will have a name which describes the model and the data used to train it.

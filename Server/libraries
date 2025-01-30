@@ -1,0 +1,6 @@
+openai
+lxml
+requests
+firebase-admin
+fastapi
+uvicorn

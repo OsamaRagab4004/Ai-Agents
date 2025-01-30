@@ -1,0 +1,63 @@
+
+<div class="dashboard-ecommerce">
+    <div class="container-fluid dashboard-content ">
+        <!-- ============================================================== -->
+        <!-- pageheader  -->
+        <!-- ============================================================== -->
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="page-header">
+                    <h2 class="pageheader-title">Articles Hub Dashboard</h2>
+                    
+     
+                </div>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end pageheader  -->
+        <!-- ============================================================== -->
+      
+            <div class="row">
+                <!-- ============================================================== -->
+          
+                <!-- ============================================================== -->
+
+                              <!-- Table  -->
+                <!-- ============================================================== -->
+                <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12">
+                    <div class="card">
+                        <h5 class="card-header">Articles</h5>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="bg-light">
+                                        <tr class="border-0">
+                                            <th class="border-0">#</th>
+                                            <th class="border-0">Title</th>
+                                            <th class="border-0">Categories</th>
+                                            <th class="border-0">Link</th>
+                                          
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!--###########################################################-->
+                                        <tr  *ngFor="let article of articles.result;let i=index">
+                                            <td>{{i+1}}</td>
+                                            <td [innerHtml]="article.title"></td>
+                                            <td [innerHtml]="article.categories"></td>
+                                            <td><a href="http://localhost:4200/article/{{article.summary_id}}">Link</a> </td>                                            
+                                        </tr>
+                                        
+
+                                         <!--###########################################################-->
+                                      
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                  
+                </div>
+                <!-- ============================================================== -->
+                <!-- end recent orders  -->

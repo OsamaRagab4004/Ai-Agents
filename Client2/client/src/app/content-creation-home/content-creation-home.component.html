@@ -1,0 +1,68 @@
+
+<div class="container-fluid dashboard-content">
+    <div class="row">
+        <div class="col-xl-9">
+            <h1>Please Insert all data so the tokens will be generated !</h1>
+
+
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Topic of the Article</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="" formControlName="topic">
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlTextarea11">Article Type</label>
+                <select class="form-control" id="exampleFormControlTextarea11" formControlName="article_type">
+                  <option value="Blog post">Blog post</option>
+                  <option value="Linkedin post">Linkedin post</option>
+                </select> 
+                
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Write here the main questions of the flow of the article:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" formControlName="questions"></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlSelect2">Tones of the article</label>
+                <select class="form-control" id="exampleFormControlSelect2" formControlName="tone">
+                  <option value="Formal">Formal</option>
+                  <option value="Friendly">Friendly</option>
+                  <option value="Casual">Casual</option>
+                  <option value="Concerned">Concerned</option>
+                  <option value="Optimistic">Optimistic</option>
+                </select> 
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Writing Style of the article</label>
+                <select class="form-control" id="exampleFormControlSelect1" formControlName="writing_style">
+                  <option value="Conversational">Conversational</option>
+                  <option value="Professional">Professional</option>
+                  <option value="Technical">Technical</option>
+                  <option value="Persuasive">Persuasive</option>
+                  <option value="Professional and Persuasive">Professional and Persuasive</option>
+                  <option value="Conversational and Persuasive">Conversational and Persuasive</option>
+                  
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Custom prompt:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" formControlName="informations"></textarea>
+              </div>
+
+             
+
+              
+
+              <br><br>
+              
+             
+              <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+
+    </div>
+</div>      
