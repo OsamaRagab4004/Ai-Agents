@@ -191,6 +191,61 @@ The framework powers a content creation tool for marketing teams (e.g., at Billw
 
 
 
+🧩 Purpose
+
+The thesis investigates how prompt engineering—the structured design of AI inputs—can:
+
+    Improve usability in AI applications.
+
+    Bridge the gap between user expectations and NLP model outputs.
+
+    Empower non-technical users to get better results from complex models.
+
+🛠 Approach
+
+    Problem Analysis:
+    Identifies that the limitations in user experience are not due to AI capabilities, but due to inadequate prompt formulation.
+
+    Foundational Exploration:
+    Covers AI fundamentals, NLP model behavior, and key software engineering principles (e.g. modularity, microservices) to build the theoretical base.
+
+    Prompt Engineering Patterns:
+    Introduces and tests structured prompt patterns including:
+
+        Prompt Contextualization
+
+        Specificity & Clarity
+
+        Iterative Refinement
+
+        Template-based Design
+
+        Prompt Chaining
+
+        Role Simulation
+
+    Experimental Evaluation:
+    Runs experiments measuring how structured prompt patterns affect output quality, user satisfaction, and response accuracy across content generation tasks.
+
+📈 Key Findings
+
+    Well-engineered prompts significantly enhance usability and reduce user frustration.
+
+    Structured prompt strategies lead to higher precision, better model understanding, and faster task completion.
+
+    Prompt engineering is not just a quick fix—it’s a scalable solution for building smarter, more intuitive AI-powered tools.
+
+    The system designed in this thesis is modular, extensible, and applicable to other domains and NLP models (e.g. LLaMA, Gemini).
+
+🎯 Impact
+
+This thesis provides a practical framework and toolkit for developers and AI practitioners looking to:
+
+    Improve user experience with NLP models.
+
+    Design AI applications that feel more natural and human-like.
+
+    Scale AI usability principles into software engineering and product development workflows.
 
 
 
